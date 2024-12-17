@@ -32,18 +32,19 @@ services:
       # Site alternative configurations, uncomment to enable
       # Note: If not set, the feature will still be available
       # with default values.
-      #- WHOOGLE_ALT_TW=farside.link/nitter
-      #- WHOOGLE_ALT_YT=farside.link/invidious
+      - WHOOGLE_ALT_TW=farside.link/nitter
+      - WHOOGLE_ALT_YT=farside.link/invidious
       #- WHOOGLE_ALT_IG=farside.link/bibliogram/u
-      #- WHOOGLE_ALT_RD=farside.link/libreddit
-      #- WHOOGLE_ALT_MD=farside.link/scribe
-      #- WHOOGLE_ALT_TL=farside.link/lingva
-      #- WHOOGLE_ALT_IMG=farside.link/rimgo
-      #- WHOOGLE_ALT_WIKI=farside.link/wikiless
-      #- WHOOGLE_ALT_IMDB=farside.link/libremdb
-      #- WHOOGLE_ALT_QUORA=farside.link/quetre
-      #- WHOOGLE_ALT_SO=farside.link/anonymousoverflow
-    env_file: # Alternatively, load variables from whoogle.env
-      - whoogle.env
+      - WHOOGLE_ALT_RD=farside.link/libreddit
+      - WHOOGLE_ALT_MD=farside.link/scribe
+      - WHOOGLE_ALT_TL=farside.link/lingva
+      - WHOOGLE_ALT_IMG=farside.link/rimgo
+      - WHOOGLE_ALT_WIKI=farside.link/wikiless
+      - WHOOGLE_ALT_IMDB=farside.link/libremdb
+      - WHOOGLE_ALT_QUORA=farside.link/quetre
+      - WHOOGLE_ALT_SO=farside.link/anonymousoverflow
+      - WHOOGLE_REDIRECTS="github.com:farside.link/gothub,fandom.com:farside.link/breezewiki,farside.link/librarian:odysee.com,farside.link/proxitok:tiktok.com"
+    #env_file: # Alternatively, load variables from whoogle.env
+      #- whoogle.env
     ports:
       - 5000:5000
